@@ -7,65 +7,127 @@
   <meta name="description" content="Genetikode delivers methylation-based cancer screening, DNA/RNA cancer panels, and AI-powered genomic analysis for clinical and translational teams.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="site-shell">
-    <header class="site-header">
+  <header class="site-header">
+    <div class="nav-inner">
       <a href="index.html" class="brand" aria-label="Genetikode home">
-        <img src="assets/genetikode-logo.png" alt="Genetikode" class="brand-logo">
-        <span class="brand-fallback">genetikode</span>
+        <img src="assets/genetikode-logo.png" alt="Genetikode — Decoding Hidden Truth" class="brand-logo">
       </a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-      <nav id="primary-nav" class="nav-links">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="4" y1="7" x2="20" y2="7"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="17" x2="20" y2="17"></line>
+        </svg>
+      </button>
+      <nav id="primary-nav" class="nav-links" aria-label="Primary navigation">
         <a href="index.html" aria-current="page">Home</a>
-        <a href="#services">Services</a>
+        <a href="#services">Products</a>
+        <a href="#platform">Platform</a>
+        <a href="#workflow">Workflow</a>
         <a href="about.html">About</a>
         <a href="team.html">Team</a>
         <a href="careers.html">Careers</a>
         <a href="newsletter.html">Newsletter</a>
-        <a href="#contact" class="button button-sm">Book Demo</a>
+        <a href="#contact" class="nav-cta">Book Demo</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero">
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Precision Oncology Intelligence</p>
-          <h1>Decode cancer biology faster with AI-native genomic analysis.</h1>
+          <p class="eyebrow">Precision Oncology Genomics</p>
+          <h1>Genomic and methylation analysis built for oncology care.</h1>
           <p class="lede">
-            Genetikode combines methylation science, DNA/RNA testing, and clinical-grade interpretation software
-            to support early screening, biomarker discovery, and confident reporting.
+            Genetikode delivers methylation-based cancer screening, DNA and RNA tumor panels, and ACMG-aligned
+            interpretation software for clinical laboratories and translational teams.
           </p>
           <div class="hero-actions">
-            <a class="button" href="#services">Explore Services</a>
-            <a class="button button-ghost" href="newsletter.html">Read Newsletter</a>
+            <a class="btn btn-primary" href="#services">Explore Products</a>
+            <a class="btn btn-secondary-dark" href="#contact">Book a Demo</a>
+            <a class="btn btn-secondary-dark" href="newsletter.html">Read Newsletter</a>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <strong>DNA, RNA &amp; Methylation</strong>
+              <span>Tissue, liquid biopsy &amp; germline</span>
+            </div>
+            <div class="metric-item">
+              <strong>ACMG Classification</strong>
+              <span>Clinical variant reporting</span>
+            </div>
+            <div class="metric-item">
+              <strong>WGS, WES &amp; Panels</strong>
+              <span>Unified analysis software</span>
+            </div>
           </div>
         </div>
-        <aside class="hero-panel">
-          <h2>Built for molecular diagnostics teams</h2>
-          <ul>
-            <li><strong>Multi-omic focus:</strong> DNA, RNA, and methylation pipelines under one platform.</li>
-            <li><strong>Clinical alignment:</strong> ACMG-ready variant interpretation for reporting workflows.</li>
-            <li><strong>Scalable compute:</strong> WGS, WES, and panel analysis with AI-driven prioritization.</li>
-          </ul>
-        </aside>
-      </section>
 
-      <section id="services" class="section reveal">
+        <div class="hero-panel-stage">
+          <aside class="hero-panel" aria-label="Platform highlights">
+            <div class="hero-panel-light" aria-hidden="true"></div>
+            <div class="hero-panel-head">
+              <h2>Built for molecular diagnostics teams</h2>
+            </div>
+            <ul class="hero-panel-list">
+              <li>
+                <strong>Multi-omic pipelines</strong>
+                <p>DNA, RNA, and methylation workflows running inside one coordinated platform.</p>
+              </li>
+              <li>
+                <strong>ACMG interpretation</strong>
+                <p>Variant classification and evidence mapping structured for clinical reporting.</p>
+              </li>
+              <li>
+                <strong>WGS, WES &amp; panel compute</strong>
+                <p>Automated quality control and variant prioritization across sequencing depths.</p>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
         <div class="section-head">
           <p class="eyebrow">Products</p>
-          <h2>Complete product portfolio across tissue, liquid biopsy, MRD, hereditary risk, and AI analytics</h2>
+          <h2>Tissue, liquid biopsy, MRD, hereditary risk, and analysis software</h2>
+          <p class="section-sub">Select any product below to inspect its assay specifications.</p>
         </div>
+
+        <div class="filter-bar" role="tablist" aria-label="Filter products by category">
+          <button class="filter-pill active" type="button" data-filter="all">All Solutions</button>
+          <button class="filter-pill" type="button" data-filter="profiling">Tissue &amp; Liquid</button>
+          <button class="filter-pill" type="button" data-filter="surveillance">MRD &amp; Heme</button>
+          <button class="filter-pill" type="button" data-filter="germline">Hereditary</button>
+          <button class="filter-pill" type="button" data-filter="software">AI Software</button>
+        </div>
+
         <div class="products-grid">
-          <article class="product-card">
-            <figure class="product-media-wrap">
-              <img src="assets/thumb-oncogene-tbx.svg" alt="OncoGene TBX thumbnail" class="product-media" loading="lazy">
+          <article class="product-card" data-category="profiling" data-window-url="pages/ogene-tbx.html" data-window-title="OGENE⁺ TBX — Tissue Profiling" tabindex="0" role="button" aria-label="Open OGENE+ TBX Tissue Profiling">
+            <figure class="product-media-wrap visual-tbx">
               <span class="media-badge">Tissue Profiling</span>
+              <svg class="visual-motif" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+                <path d="M35 15C35 40 85 40 85 60C85 80 35 80 35 105" stroke="#720630" stroke-width="3" stroke-linecap="round"/>
+                <path d="M85 15C85 40 35 40 35 60C35 80 85 80 85 105" stroke="#f08a2f" stroke-width="3" stroke-linecap="round"/>
+                <line x1="42" y1="28" x2="78" y2="28" stroke="#720630" stroke-width="2" stroke-linecap="round"/>
+                <line x1="48" y1="44" x2="72" y2="44" stroke="#720630" stroke-width="2" stroke-linecap="round"/>
+                <line x1="48" y1="76" x2="72" y2="76" stroke="#720630" stroke-width="2" stroke-linecap="round"/>
+                <line x1="42" y1="92" x2="78" y2="92" stroke="#720630" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <div class="visual-brand-lockup">
+                <img src="assets/ogene-logo.png" alt="OGene+ — Decoding Biology. Defining Precision." class="visual-logo" loading="lazy">
+                <span class="visual-variant-tag">TBX</span>
+              </div>
             </figure>
             <div class="product-copy">
-              <h3 class="product-title"><span class="product-brand">ONCOGENE</span> <span class="product-variant">TBX</span></h3>
+              <h3 class="product-title"><span class="product-brand ogene-brand">OGENE<sup class="ogene-plus">+</sup></span> <span class="product-variant">TBX</span></h3>
               <p class="product-subtitle">Comprehensive DNA &amp; RNA molecular profiling on tissue</p>
               <ul class="product-details">
                 <li>Comprehensive DNA and RNA profiling from tumor tissue.</li>
@@ -76,13 +138,22 @@
               </ul>
             </div>
           </article>
-          <article class="product-card">
-            <figure class="product-media-wrap">
-              <img src="assets/thumb-oncogene-lbx.svg" alt="OncoGene LBX thumbnail" class="product-media" loading="lazy">
+
+          <article class="product-card" data-category="profiling" data-window-url="pages/ogene-lbx.html" data-window-title="OGENE⁺ LBX — Liquid Biopsy" tabindex="0" role="button" aria-label="Open OGENE+ LBX Liquid Biopsy">
+            <figure class="product-media-wrap visual-lbx">
               <span class="media-badge">Liquid Biopsy</span>
+              <svg class="visual-motif" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+                <path d="M15 62C30 35 48 35 60 62C72 89 90 89 105 62" stroke="#147f86" stroke-width="3" stroke-linecap="round"/>
+                <path d="M15 48C32 76 48 76 60 48C72 20 88 20 105 48" stroke="#720630" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 5"/>
+                <circle cx="60" cy="60" r="36" stroke="#147f86" stroke-width="1.5" stroke-dasharray="3 5"/>
+              </svg>
+              <div class="visual-brand-lockup">
+                <img src="assets/ogene-logo.png" alt="OGene+ — Decoding Biology. Defining Precision." class="visual-logo" loading="lazy">
+                <span class="visual-variant-tag">LBX</span>
+              </div>
             </figure>
             <div class="product-copy">
-              <h3 class="product-title"><span class="product-brand">ONCOGENE</span> <span class="product-variant">LBX</span></h3>
+              <h3 class="product-title"><span class="product-brand ogene-brand">OGENE<sup class="ogene-plus">+</sup></span> <span class="product-variant">LBX</span></h3>
               <p class="product-subtitle">Blood-based comprehensive DNA &amp; RNA profiling</p>
               <ul class="product-details">
                 <li>Non-invasive blood-based comprehensive DNA and RNA profiling.</li>
@@ -93,13 +164,22 @@
               </ul>
             </div>
           </article>
-          <article class="product-card">
-            <figure class="product-media-wrap">
-              <img src="assets/thumb-oncogene-mrd.svg" alt="OncoGene MRD thumbnail" class="product-media" loading="lazy">
+
+          <article class="product-card" data-category="surveillance" data-window-title="OGENE⁺ MRD — MRD Monitoring" tabindex="0" role="button" aria-label="Open OGENE+ MRD Monitoring">
+            <figure class="product-media-wrap visual-mrd">
               <span class="media-badge">MRD Monitoring</span>
+              <svg class="visual-motif" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+                <circle cx="60" cy="60" r="42" stroke="#10845c" stroke-width="2" stroke-dasharray="4 4"/>
+                <circle cx="60" cy="60" r="28" stroke="#d49b27" stroke-width="2"/>
+                <path d="M22 72L42 72L52 40L64 82L74 54L84 64L100 64" stroke="#10845c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="visual-brand-lockup">
+                <img src="assets/ogene-logo.png" alt="OGene+ — Decoding Biology. Defining Precision." class="visual-logo" loading="lazy">
+                <span class="visual-variant-tag">MRD</span>
+              </div>
             </figure>
             <div class="product-copy">
-              <h3 class="product-title"><span class="product-brand">ONCOGENE</span> <span class="product-variant">MRD</span></h3>
+              <h3 class="product-title"><span class="product-brand ogene-brand">OGENE<sup class="ogene-plus">+</sup></span> <span class="product-variant">MRD</span></h3>
               <p class="product-subtitle">Methylation-based ctDNA MRD detection and response tracking</p>
               <ul class="product-details">
                 <li>Ultra-sensitive methylation-based ctDNA detection.</li>
@@ -110,13 +190,23 @@
               </ul>
             </div>
           </article>
-          <article class="product-card">
-            <figure class="product-media-wrap">
-              <img src="assets/thumb-oncogene-heme.svg" alt="OncoGene Heme thumbnail" class="product-media" loading="lazy">
+
+          <article class="product-card" data-category="surveillance" data-window-title="OGENE⁺ HEME — Blood Cancers" tabindex="0" role="button" aria-label="Open OGENE+ HEME Blood Cancers">
+            <figure class="product-media-wrap visual-heme">
               <span class="media-badge">Blood Cancers</span>
+              <svg class="visual-motif" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+                <circle cx="48" cy="52" r="24" stroke="#d96b27" stroke-width="2.5"/>
+                <circle cx="76" cy="68" r="20" stroke="#720630" stroke-width="2.5"/>
+                <circle cx="62" cy="34" r="11" stroke="#d49b27" stroke-width="2"/>
+                <path d="M38 52C44 45 52 45 58 52" stroke="#d96b27" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <div class="visual-brand-lockup">
+                <img src="assets/ogene-logo.png" alt="OGene+ — Decoding Biology. Defining Precision." class="visual-logo" loading="lazy">
+                <span class="visual-variant-tag">HEME</span>
+              </div>
             </figure>
             <div class="product-copy">
-              <h3 class="product-title"><span class="product-brand">ONCOGENE</span> <span class="product-variant">HEME</span></h3>
+              <h3 class="product-title"><span class="product-brand ogene-brand">OGENE<sup class="ogene-plus">+</sup></span> <span class="product-variant">HEME</span></h3>
               <p class="product-subtitle">Comprehensive DNA &amp; RNA profiling for hematological cancers</p>
               <ul class="product-details">
                 <li>Comprehensive DNA and RNA profiling for blood cancers.</li>
@@ -127,13 +217,23 @@
               </ul>
             </div>
           </article>
-          <article class="product-card">
-            <figure class="product-media-wrap">
-              <img src="assets/thumb-oncogene-hereditary.svg" alt="OncoGene Hereditary thumbnail" class="product-media" loading="lazy">
+
+          <article class="product-card" data-category="germline" data-window-title="OGENE⁺ HEREDITARY — Germline Risk" tabindex="0" role="button" aria-label="Open OGENE+ HEREDITARY Germline Risk">
+            <figure class="product-media-wrap visual-hereditary">
               <span class="media-badge">Germline Risk</span>
+              <svg class="visual-motif" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+                <circle cx="60" cy="26" r="10" stroke="#1e62a6" stroke-width="2.5"/>
+                <circle cx="34" cy="84" r="10" stroke="#147f86" stroke-width="2.5"/>
+                <circle cx="86" cy="84" r="10" stroke="#720630" stroke-width="2.5"/>
+                <path d="M60 36V56M60 56H34V74M60 56H86V74" stroke="#1e62a6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="visual-brand-lockup">
+                <img src="assets/ogene-logo.png" alt="OGene+ — Decoding Biology. Defining Precision." class="visual-logo" loading="lazy">
+                <span class="visual-variant-tag">HEREDITARY</span>
+              </div>
             </figure>
             <div class="product-copy">
-              <h3 class="product-title"><span class="product-brand">ONCOGENE</span> <span class="product-variant">HEREDITARY</span></h3>
+              <h3 class="product-title"><span class="product-brand ogene-brand">OGENE<sup class="ogene-plus">+</sup></span> <span class="product-variant">HEREDITARY</span></h3>
               <p class="product-subtitle">Comprehensive germline DNA testing for inherited cancer risk</p>
               <ul class="product-details">
                 <li>Comprehensive germline DNA testing for inherited cancer risk.</li>
@@ -144,13 +244,25 @@
               </ul>
             </div>
           </article>
-          <article class="product-card">
-            <figure class="product-media-wrap">
-              <img src="assets/precisionai.svg" alt="PrecisionAI unified analysis platform visual" class="product-media" loading="lazy">
+
+          <article class="product-card" data-category="software" data-window-title="PrecisionAI — Unified AI Software" tabindex="0" role="button" aria-label="Open PrecisionAI Unified AI Software">
+            <figure class="product-media-wrap visual-ai">
               <span class="media-badge">Unified AI Software</span>
+              <svg class="visual-motif" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+                <circle cx="28" cy="36" r="6" stroke="#720630" stroke-width="2.5"/>
+                <circle cx="28" cy="84" r="6" stroke="#720630" stroke-width="2.5"/>
+                <circle cx="60" cy="60" r="9" stroke="#d49b27" stroke-width="3"/>
+                <circle cx="92" cy="36" r="6" stroke="#147f86" stroke-width="2.5"/>
+                <circle cx="92" cy="84" r="6" stroke="#147f86" stroke-width="2.5"/>
+                <path d="M33 40L52 54M33 80L52 66M68 54L87 40M68 66L87 80" stroke="#720630" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <div class="visual-brand-lockup">
+                <img src="assets/ogene-logo.png" alt="OGene+ — Decoding Biology. Defining Precision." class="visual-logo" loading="lazy">
+                <span class="visual-variant-tag is-gold">PrecisionAI</span>
+              </div>
             </figure>
             <div class="product-copy">
-              <h3>PrecisionAI</h3>
+              <h3 class="product-title"><span class="product-brand">PrecisionAI</span></h3>
               <p class="product-subtitle">Integrated Genomic Analysis + ACMG Classification</p>
               <ul class="product-details">
                 <li>AI-based analysis software for WGS, WES, and panel data.</li>
@@ -162,58 +274,65 @@
             </div>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="platform" class="section section-accent reveal">
+    <section id="platform" class="section section-dark">
+      <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Platform</p>
-          <h2>Clinical rigor with software-first execution</h2>
+          <p class="eyebrow">Platform &amp; Workflow</p>
+          <h2>PrecisionAI software architecture</h2>
+          <p class="section-sub">From raw sequencing files to ACMG-aligned clinical reports in one stack.</p>
         </div>
-        <div class="platform-columns">
-          <div class="platform-card">
-            <h3>Unified Data Engine</h3>
-            <p>Ingest FASTQ, BAM/CRAM, and methylation matrix formats with traceable run metadata and streamlined review checkpoints.</p>
-          </div>
-          <div class="platform-card">
-            <h3>AI Triage Layer</h3>
-            <p>Rank variants and genomic events using learned models, reducing manual review while preserving explainability.</p>
-          </div>
-          <div class="platform-card">
-            <h3>Report-Ready Outputs</h3>
-            <p>Deliver concise clinical summaries, evidence mappings, and customizable exports for downstream reporting systems.</p>
-          </div>
-        </div>
-      </section>
 
-      <section id="workflow" class="section reveal">
-        <div class="section-head">
-          <p class="eyebrow">Workflow</p>
-          <h2>From sample to insight in three steps</h2>
-        </div>
-        <div class="workflow-grid">
-          <article class="workflow-step">
-            <span>1</span>
-            <h3>Sample &amp; Data Intake</h3>
-            <p>Accept sequencing and methylation datasets with flexible study or clinical metadata templates.</p>
-          </article>
-          <article class="workflow-step">
-            <span>2</span>
-            <h3>AI-Powered Processing</h3>
-            <p>Run validated pipelines for WGS, WES, panels, RNA-seq, and methylation analysis in one coordinated stack.</p>
-          </article>
-          <article class="workflow-step">
-            <span>3</span>
-            <h3>Interpretation &amp; Reporting</h3>
-            <p>Generate ACMG-aligned variant classifications and publish report-ready results for multidisciplinary review.</p>
-          </article>
-        </div>
-      </section>
+        <div class="platform-split">
+          <div class="platform-panel">
+            <h3>Core Architecture</h3>
+            <dl class="spec-list">
+              <div class="spec-row">
+                <dt>Data Engine</dt>
+                <dd>Ingests FASTQ, BAM/CRAM, and methylation matrix formats with traceable run metadata and QC checkpoints.</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Variant Triage</dt>
+                <dd>Ranks SNVs, indels, CNVs, and fusions using trained models while preserving full evidence traceability.</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Clinical Reporting</dt>
+                <dd>Produces ACMG-classified summaries, therapy associations, and structured exports for lab systems.</dd>
+              </div>
+            </dl>
+          </div>
 
-      <section id="contact" class="section contact-section reveal">
+          <div id="workflow" class="platform-panel">
+            <h3>Diagnostic Workflow</h3>
+            <dl class="spec-list">
+              <div class="spec-row">
+                <dt>Intake</dt>
+                <dd>Upload sequencing or methylation datasets using standardized clinical or study metadata templates.</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Processing</dt>
+                <dd>Execute validated pipelines for WGS, WES, targeted panels, RNA-seq, and ctDNA methylation.</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Review</dt>
+                <dd>Inspect ACMG evidence tiers, filter calls, and publish finalized molecular reports.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-white">
+      <div class="container">
         <div class="section-head">
           <p class="eyebrow">Contact</p>
           <h2>Talk with Genetikode</h2>
+          <p class="section-sub">Partner with us for oncology assays, MRD programs, or PrecisionAI deployment.</p>
         </div>
+
         <div class="contact-layout">
           <div class="contact-copy">
             <p>
@@ -239,42 +358,92 @@
             </div>
             <p class="contact-email-line">
               <strong>Email:</strong> <a href="mailto:info@genetikode.com">info@genetikode.com</a>
-              | <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/genetikode-private-limited/?viewAsMember=true" target="_blank" rel="noopener noreferrer">Genetikode Private Limited</a>
+              &nbsp;|&nbsp;
+              <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/genetikode-private-limited/?viewAsMember=true" target="_blank" rel="noopener noreferrer">Genetikode Private Limited</a>
             </p>
           </div>
+
           <form id="contact-form" class="contact-form" action="mailto:info@genetikode.com" method="post" enctype="text/plain">
-            <label for="contact-name">Full Name</label>
-            <input id="contact-name" name="name" type="text" autocomplete="name" required>
-
-            <label for="contact-email">Work Email</label>
-            <input id="contact-email" name="email" type="email" autocomplete="email" required>
-
-            <label for="contact-organization">Organization</label>
-            <input id="contact-organization" name="organization" type="text" autocomplete="organization">
-
-            <label for="contact-message">Message</label>
-            <textarea id="contact-message" name="message" rows="5" required></textarea>
-
-            <button class="button" type="submit">Send Message</button>
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Dr. Jane Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Work Email</label>
+              <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="jane@hospital.org" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-organization">Organization</label>
+              <input id="contact-organization" name="organization" type="text" autocomplete="organization" placeholder="Hospital, Lab, or Research Institute">
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="4" placeholder="Tell us about your oncology testing or PrecisionAI requirements..." required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit" style="width: 100%;">Send Message</button>
             <p class="form-note">Form submissions are addressed to <strong>info@genetikode.com</strong>.</p>
             <p class="form-status" aria-live="polite"></p>
           </form>
         </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p>© <span id="year"></span> Genetikode. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="team.html">Team</a>
-        <a href="careers.html">Careers</a>
-        <a href="newsletter.html">Newsletter</a>
       </div>
-      <p class="footer-contact-line">Corporate Office: Noida, India (+91 9354707076) | Laboratory: Pune, India (+91 9354707076) | <a href="mailto:info@genetikode.com">info@genetikode.com</a> | <a href="https://www.linkedin.com/company/genetikode-private-limited/?viewAsMember=true" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-    </footer>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <p style="margin: 0;">© <span id="year"></span> Genetikode. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="team.html">Team</a>
+          <a href="careers.html">Careers</a>
+          <a href="newsletter.html">Newsletter</a>
+        </div>
+      </div>
+      <p class="footer-contact-line">
+        Corporate Office: Noida, India (<a href="tel:+919354707076">+91 9354707076</a>) &nbsp;|&nbsp;
+        Laboratory: Pune, India (<a href="tel:+919354707076">+91 9354707076</a>) &nbsp;|&nbsp;
+        <a href="mailto:info@genetikode.com">info@genetikode.com</a> &nbsp;|&nbsp;
+        <a href="https://www.linkedin.com/company/genetikode-private-limited/?viewAsMember=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Windows OS Window Modal -->
+  <div id="win-overlay" class="win-overlay" role="dialog" aria-modal="true" aria-labelledby="win-title" aria-hidden="true">
+    <div id="win-window" class="win-window">
+      <div id="win-titlebar" class="win-titlebar">
+        <div class="win-titlebar-left">
+          <span class="win-app-icon">O+</span>
+          <span id="win-title" class="win-title">OGENE⁺ Viewer</span>
+        </div>
+        <div class="win-controls">
+          <button type="button" class="win-ctrl-btn win-minimize" aria-label="Minimize window" title="Minimize">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2">
+              <line x1="2" y1="6" x2="10" y2="6"></line>
+            </svg>
+          </button>
+          <button type="button" class="win-ctrl-btn win-maximize" aria-label="Maximize window" title="Maximize">
+            <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="2" y="2" width="8" height="8"></rect>
+            </svg>
+          </button>
+          <button type="button" class="win-ctrl-btn win-close" aria-label="Close window" title="Close">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.3">
+              <line x1="2.5" y1="2.5" x2="9.5" y2="9.5"></line>
+              <line x1="9.5" y1="2.5" x2="2.5" y2="9.5"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="win-body">
+        <iframe id="win-iframe" class="win-iframe" title="Product interactive view"></iframe>
+        <div id="win-detail-view" class="win-detail-view"></div>
+      </div>
+    </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
